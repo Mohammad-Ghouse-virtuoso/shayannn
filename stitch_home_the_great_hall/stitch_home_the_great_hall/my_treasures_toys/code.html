@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&amp;family=Gaegu:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed-variant": "#003baf",
+            "on-tertiary-container": "#b0c0ff",
+            "on-error-container": "#93000a",
+            "on-secondary": "#ffffff",
+            "background": "#fbf9f5",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#fbf9f5",
+            "outline": "#72796e",
+            "surface-dim": "#dbdad6",
+            "primary-fixed": "#bcf0ae",
+            "primary": "#154212",
+            "surface-container-high": "#eae8e4",
+            "on-background": "#1b1c1a",
+            "surface-container": "#efeeea",
+            "on-primary-fixed-variant": "#23501e",
+            "surface-container-highest": "#e4e2de",
+            "on-primary-container": "#9dd090",
+            "on-secondary-fixed-variant": "#5d4200",
+            "secondary-fixed-dim": "#f7bd48",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#715000",
+            "on-secondary-fixed": "#271900",
+            "inverse-on-surface": "#f2f0ed",
+            "on-primary": "#ffffff",
+            "primary-container": "#2d5a27",
+            "on-tertiary-fixed": "#00164e",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#a1d494",
+            "secondary": "#7b5800",
+            "on-surface-variant": "#42493e",
+            "tertiary": "#003091",
+            "tertiary-fixed": "#dce1ff",
+            "secondary-container": "#fdc34d",
+            "tertiary-fixed-dim": "#b6c4ff",
+            "surface-container-low": "#f5f3ef",
+            "secondary-fixed": "#ffdea6",
+            "outline-variant": "#c2c9bb",
+            "on-surface": "#1b1c1a",
+            "inverse-surface": "#30312e",
+            "on-primary-fixed": "#002201",
+            "surface-bright": "#fbf9f5",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#a1d494",
+            "tertiary-container": "#0f45be",
+            "surface-tint": "#3b6934",
+            "surface-variant": "#e4e2de"
+          },
+          fontFamily: {
+            "headline": ["Epilogue"],
+            "body": ["Newsreader"],
+            "label": ["Newsreader"],
+            "hand": ["Gaegu"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .watercolor-bg {
+      background-image: radial-gradient(circle at 20% 30%, rgba(21, 66, 18, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(123, 88, 0, 0.04) 0%, transparent 50%);
+    }
+    .ink-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #c2c9bb 50%, transparent);
+      mask-image: radial-gradient(circle, black 50%, transparent 100%);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container watercolor-bg min-h-screen">
+<!-- TopAppBar -->
+<header class="w-full py-6 px-8 bg-[#fbf9f5]">
+<div class="flex justify-between items-center max-w-6xl mx-auto">
+<div class="text-3xl font-black text-[#154212] italic">Leo's Notebook</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-['Epilogue'] font-bold text-2xl tracking-tight text-[#154212] dark:text-stone-400 hover:text-[#7b5800] hover:rotate-1 transition-transform duration-200" href="#">My Story</a>
+<a class="font-['Epilogue'] font-bold text-2xl tracking-tight text-[#154212] dark:text-stone-400 hover:text-[#7b5800] hover:rotate-1 transition-transform duration-200" href="#">Sketches</a>
+<a class="font-['Epilogue'] font-bold text-2xl tracking-tight text-[#7b5800] border-b-2 border-[#7b5800] pb-1 hover:rotate-1 transition-transform duration-200" href="#">My Toys</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#154212] text-2xl">history_edu</span>
+</div>
+</div>
+<div class="bg-[#f5f3ef] h-1 w-full mt-4"></div>
+</header>
+<main class="max-w-6xl mx-auto px-6 py-12">
+<!-- Hero Title -->
+<div class="mb-20 text-center relative">
+<h1 class="font-headline text-7xl font-extrabold text-primary tracking-tighter mb-2 -rotate-1">My Treasures</h1>
+<p class="font-hand text-2xl text-secondary opacity-80">A collection of things that matter.</p>
+<div class="absolute -top-8 -left-4 w-24 h-24 bg-tertiary-container/10 rounded-full blur-2xl"></div>
+</div>
+<!-- Feature Section: The LEGO Castle -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32">
+<div class="lg:col-span-7 relative">
+<div class="absolute top-0 left-0 w-full h-full bg-surface-container-high -rotate-1 z-0"></div>
+<div class="relative z-10 p-4 bg-surface-container-lowest shadow-xl rotate-1">
+<img alt="Detailed LEGO medieval castle with towers and knights" class="w-full h-[500px] object-cover grayscale-[0.2] contrast-[1.1]" data-alt="A grand medieval LEGO castle with grey stone walls, tall blue-capped towers, and tiny plastic knight figures guarding the drawbridge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmOHtqp5YENiR92DW9B9YbEgdf54HRWKG02NtwNpc48g6hu2BeBjDSRqi8X2J2My4sy5Fe_hyhQlhIyof_u_c7DZTJYB0M-0rKu2KGDClVXbHYUarfoGs-nA7-NUREUvf3meS5CDrl5jKJNcy7Urbt9nbz4I00VGVp9SGxpE9ytCJLPBoBkzEgJei4X20shRNz9MnxKlXj9mAl5WiuqbGKdNk094rXs7HcGx8ClnhHEimcCIEPKPcoSkSye5dijJ5rvmrBYkssW7g"/>
+<div class="absolute top-4 right-4 bg-secondary-container px-6 py-1 font-hand text-xl -rotate-2">Magic Found Here</div>
+</div>
+<!-- Hand-drawn sketch overlay -->
+<div class="absolute -bottom-10 -right-10 w-48 h-48 p-4 bg-white shadow-lg -rotate-6 hidden md:block">
+<img alt="Pencil sketch of a brave knight" class="w-full h-full object-contain" data-alt="A charming child-like pencil drawing of a knight in full armor holding a shield with a lion emblem" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsQuhSfRlGd1cLYHka6KV6igPRnUqerxJkmkPTTw65niz5VECinnsMfA-gDWt0_vVv-IHk6LKX6A00hBVcQL8APfSfJLPABAAXdxMbde6kNhZ1yuVhaHJWP4TFgEpFFiMqvqIdr2BcoH4XTLx_gE1UekeNdWNmKhaDoalAxua4esa1-Q7Ol2Bov1qAJNAa-t3QzwL5sD46bHCWhscgdWA083fNFRQ0SIC6HtYS95LxeS5il-AkfkG-nUcJEsJvp7ODQvTXQkGB4gY"/>
+<p class="font-hand text-center text-sm mt-2">Sir Gallant (Self Portrait?)</p>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-6">
+<h2 class="font-headline text-4xl text-primary mb-4 underline decoration-secondary/30 decoration-wavy">The LEGO Castle</h2>
+<div class="bg-surface-container-low p-8 relative">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-6 bg-secondary-container shadow-sm"></div>
+<p class="text-xl italic leading-relaxed text-on-surface mb-6">
+            "This knight once fought a dragon made of socks. It was a long battle in the laundry room, but the castle stood firm against the lint fire."
+          </p>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-hand text-xl flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">swords</span> Power</span>
+<span class="font-headline text-2xl text-primary">99</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-hand text-xl flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span> Magic</span>
+<span class="font-headline text-2xl text-primary">45</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-hand text-xl flex items-center gap-2"><span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span> Durability</span>
+<span class="font-headline text-2xl text-primary">82</span>
+</div>
+</div>
+<button class="mt-8 w-full py-3 bg-primary text-on-primary font-headline tracking-widest text-sm hover:translate-y-[-2px] transition-all">EXPLORE STORY</button>
+</div>
+</div>
+</section>
+<!-- Bento Grid of Other Treasures -->
+<div class="ink-divider mb-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Treasure 2: The Space Explorer -->
+<article class="bg-surface-container-low p-6 -rotate-1 hover:rotate-0 transition-transform duration-500 flex flex-col h-full">
+<div class="mb-6 relative h-64">
+<img alt="A vintage toy robot" class="w-full h-full object-cover" data-alt="A classic retro tin robot toy with red and silver paint standing against a soft parchment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs1HerjbjCs0O4PuvwiVdo2zKGc-QY616aACOvth020pn7ZRn3e8jjOByzTTPliNff_xcU1IXdtJiELSc4UIAJcWChFt8F18uj7kfde3rBKiVqJZKtSUagPzqH_UM6qdQRXAjyR1bj2xdT33EQGvicWicIupc1xYfoRYCT6vcStOui3Mm0Cjzk1IAvVaCA4JqzZtIv_JegOlPbtm66GBdM0pEc7A_bs8R12VB2czw3Cvge-Yb7fmst9KmuVaLgQDaCrcMbNYmVKhI"/>
+<div class="absolute -top-2 -right-2 bg-tertiary text-on-tertiary px-3 py-1 text-xs font-headline uppercase tracking-tighter">Rare Artifact</div>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">Iron Ziggy</h3>
+<p class="font-body text-lg italic opacity-80 mb-6 flex-grow">Ziggy traveled from the kitchen table to Mars in under 4 minutes. His battery is made of stardust and AA's.</p>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between font-hand text-lg text-secondary">
+<span>Power</span>
+<span>72</span>
+</div>
+<div class="w-full bg-outline-variant/20 h-1">
+<div class="bg-secondary h-full w-[72%]"></div>
+</div>
+</div>
+<button class="text-secondary font-headline text-sm underline decoration-secondary decoration-2 underline-offset-4 hover:opacity-70 transition-opacity text-left uppercase">Read More</button>
+</article>
+<!-- Treasure 3: The Dragon Kin -->
+<article class="bg-surface-container-highest p-6 rotate-1 hover:rotate-0 transition-transform duration-500 flex flex-col h-full">
+<div class="mb-6 relative h-64">
+<img alt="Plush green dragon toy" class="w-full h-full object-cover" data-alt="A soft, emerald green plush dragon toy with small felt wings sitting in a sunlit wooden chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDiU4uNofJwXb6NABtZF6RbzwSX24s5RufsWjVm8V_GhC1GvSDWsBSOTLZHR_7UHdyRbbKOenEG9WZGeaW3FnZZPyM2XAEHbebQ5xognJjBUT9y9Brg-BHGu0Iho2enqW8QJov2FOma4cKKtZ2vt-b2OI3DSzTEcgY5huNJUtdSONGSLp-Y61MlWvVm3qI01uGsFgnFqVRFM8nOybIEcUSwct_YNm1fK-3KLNfx40QhNIAikSMMczU9jMmnvQkOxEwGbXOi0uJ-lU"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">Emerald Tooth</h3>
+<p class="font-body text-lg italic opacity-80 mb-6 flex-grow">Doesn't breathe fire because it's too ticklish. Best friend to all stuffed sheep.</p>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between font-hand text-lg text-secondary">
+<span>Magic</span>
+<span>100</span>
+</div>
+<div class="w-full bg-outline-variant/20 h-1">
+<div class="bg-tertiary h-full w-[100%]"></div>
+</div>
+</div>
+<button class="text-secondary font-headline text-sm underline decoration-secondary decoration-2 underline-offset-4 hover:opacity-70 transition-opacity text-left uppercase">Read More</button>
+</article>
+<!-- Treasure 4: Wooden Fleet -->
+<article class="bg-surface-container-low p-6 -rotate-2 hover:rotate-0 transition-transform duration-500 flex flex-col h-full">
+<div class="mb-6 relative h-64">
+<img alt="Small wooden toy boats" class="w-full h-full object-cover" data-alt="Three carved wooden toy boats with white paper sails floating on a dark navy surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBceXFA4oTI_c1bTqqLcflgW63fhVpnMBGHztUxKlnPmp1zbr3zttMt52kjYPwZjnsEv5mB7HHQf7v25-cnU771p6AVrwYep7DPhSNUuffYeu3ATfFcHMGSVPZMTbwtXNI0Obv4xOrjhXvC15SrAl3StlX-1f7S6AghArg9BMwjdZTU5WAyQEcF50BWUStSjwwYuFq6BSz9RS4YDaNoP_Hn8F2BfQpfxpZL8XjiqUC8OWpm4gqILl-OneWO2_Q0F9T7a8S-YgptyvI"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">The Bathtub Navy</h3>
+<p class="font-body text-lg italic opacity-80 mb-6 flex-grow">Sailed the Great Porcelain Sea. Survived the Waterfall of Soap and the Whirlpool of Drain.</p>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between font-hand text-lg text-secondary">
+<span>Durability</span>
+<span>88</span>
+</div>
+<div class="w-full bg-outline-variant/20 h-1">
+<div class="bg-primary h-full w-[88%]"></div>
+</div>
+</div>
+<button class="text-secondary font-headline text-sm underline decoration-secondary decoration-2 underline-offset-4 hover:opacity-70 transition-opacity text-left uppercase">Read More</button>
+</article>
+</div>
+<!-- Hand-drawn Counter Section -->
+<div class="mt-32 mb-16 text-center">
+<div class="ink-divider mb-12"></div>
+<div class="inline-block px-12 py-6 border-2 border-dashed border-outline-variant rotate-1">
+<p class="font-hand text-3xl text-primary flex items-center justify-center gap-6">
+<span>12 Dragons</span>
+<span class="text-secondary">•</span>
+<span>4 Castles</span>
+<span class="text-secondary">•</span>
+<span>1 Robot</span>
+</p>
+<p class="font-hand text-lg text-on-surface/50 mt-2">...and many more to find!</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-20 border-t border-[#c2c9bb]/20">
+<div class="flex flex-col items-center gap-4 max-w-4xl mx-auto text-center">
+<p class="font-['Newsreader'] italic text-sm text-[#154212] dark:text-stone-400">© Leo's Notebook</p>
+<div class="flex gap-6">
+<a class="font-['Newsreader'] italic text-sm text-[#154212]/70 hover:text-[#7b5800]" href="#">Owl Post</a>
+</div>
+<div class="mt-4 opacity-30 select-none pointer-events-none">
+<span class="material-symbols-outlined text-4xl">ink_pen</span>
+</div>
+</div>
+</footer>
+</body></html>

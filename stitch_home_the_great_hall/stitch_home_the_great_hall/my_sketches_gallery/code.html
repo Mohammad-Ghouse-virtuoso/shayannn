@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Newsreader:ital,wght@0,400;0,700;1,400&amp;family=Gaegu&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#003baf",
+              "on-tertiary-container": "#b0c0ff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "background": "#fbf9f5",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#fbf9f5",
+              "outline": "#72796e",
+              "surface-dim": "#dbdad6",
+              "primary-fixed": "#bcf0ae",
+              "primary": "#154212",
+              "surface-container-high": "#eae8e4",
+              "on-background": "#1b1c1a",
+              "surface-container": "#efeeea",
+              "on-primary-fixed-variant": "#23501e",
+              "surface-container-highest": "#e4e2de",
+              "on-primary-container": "#9dd090",
+              "on-secondary-fixed-variant": "#5d4200",
+              "secondary-fixed-dim": "#f7bd48",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#715000",
+              "on-secondary-fixed": "#271900",
+              "inverse-on-surface": "#f2f0ed",
+              "on-primary": "#ffffff",
+              "primary-container": "#2d5a27",
+              "on-tertiary-fixed": "#00164e",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a1d494",
+              "secondary": "#7b5800",
+              "on-surface-variant": "#42493e",
+              "tertiary": "#003091",
+              "tertiary-fixed": "#dce1ff",
+              "secondary-container": "#fdc34d",
+              "tertiary-fixed-dim": "#b6c4ff",
+              "surface-container-low": "#f5f3ef",
+              "secondary-fixed": "#ffdea6",
+              "outline-variant": "#c2c9bb",
+              "on-surface": "#1b1c1a",
+              "inverse-surface": "#30312e",
+              "on-primary-fixed": "#002201",
+              "surface-bright": "#fbf9f5",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#a1d494",
+              "tertiary-container": "#0f45be",
+              "surface-tint": "#3b6934",
+              "surface-variant": "#e4e2de"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Newsreader"],
+              "label": ["Newsreader"],
+              "hand": ["Gaegu"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sketch-border {
+            border: 2px solid #154212;
+            border-radius: 2% 98% 4% 96% / 96% 4% 98% 2%;
+        }
+        .watercolor-bg {
+            background-image: radial-gradient(circle at 20% 30%, rgba(157, 208, 144, 0.1) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(253, 195, 77, 0.05) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body watercolor-bg min-h-screen">
+<!-- TopAppBar -->
+<header class="w-full py-6 px-8">
+<div class="flex justify-between items-center max-w-6xl mx-auto">
+<div class="text-3xl font-black text-[#154212] dark:text-green-400 italic">Leo's Notebook</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold text-2xl tracking-tight text-[#154212] dark:text-stone-400 hover:text-[#7b5800] hover:rotate-1 transition-transform duration-200" href="#">My Story</a>
+<a class="font-headline font-bold text-2xl tracking-tight text-[#7b5800] dark:text-yellow-600 border-b-2 border-[#7b5800] pb-1 hover:rotate-1 transition-transform duration-200" href="#">Sketches</a>
+<a class="font-headline font-bold text-2xl tracking-tight text-[#154212] dark:text-stone-400 hover:text-[#7b5800] hover:rotate-1 transition-transform duration-200" href="#">My Toys</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#154212] text-3xl">history_edu</span>
+</div>
+</div>
+<div class="bg-[#f5f3ef] dark:bg-stone-800 h-1 w-full mt-4"></div>
+</header>
+<main class="max-w-6xl mx-auto px-6 py-12">
+<!-- Title Section -->
+<div class="mb-20 relative">
+<h1 class="font-headline font-black text-6xl text-primary -rotate-1 inline-block relative">
+                My Sketches
+                <span class="absolute -bottom-2 left-0 w-full h-1 bg-secondary/30 rounded-full"></span>
+</h1>
+<div class="mt-4 font-hand text-2xl text-secondary rotate-1">Captured dreams and strange things...</div>
+</div>
+<!-- Asymmetric Scrapbook Gallery -->
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-y-32">
+<!-- Neon Dragon Card -->
+<div class="md:col-start-1 md:col-end-7 relative group">
+<div class="bg-surface-container-low p-4 sketch-border -rotate-2 shadow-xl hover:rotate-0 transition-transform duration-500">
+<!-- Washi Tape -->
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 w-16 h-8 bg-secondary-container/60 rotate-3 z-10 opacity-80 backdrop-blur-sm"></div>
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img alt="Cyberpunk dragon art" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="A stylized neon-glowing dragon weaving through futuristic skyscrapers at night with vibrant pink and teal lighting, digital art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNZM8D9OEAAvwWtxCfwtYJ2GQ_-PhKsLVVHEtT6fWngJHpbvQPEyAxHCni2co3MgGwNu_WjZ-1xVUrzIk8fczTjaY-uH-PTyLDbGHoB-gINH_CLXhB012MJ5l3lpPdbyHPTTKBV0-rSG2E1Tdi_Q7htA-ZtIH1gwGnEssmEvpLZREDZ4z0MJ6FRgdLMGxqoA64ZBIW7UNZ7eUKdZTZCWArfZc8UxPfNOZO-fSR2bHWUrK18KdkA-ULOvkpHN3HzOww5C54dAdqfCA"/>
+</div>
+<div class="mt-6 text-center">
+<p class="font-hand text-3xl text-on-surface">The Dragon of Neo-London</p>
+<p class="font-body italic text-sm text-on-surface-variant mt-1">Drawn with electric ink.</p>
+</div>
+</div>
+</div>
+<!-- Clockwork Owl Card -->
+<div class="md:col-start-8 md:col-end-12 relative mt-12 md:mt-0">
+<div class="bg-surface-container-highest p-4 sketch-border rotate-3 shadow-lg hover:rotate-1 transition-transform duration-500">
+<!-- Clipped Effect -->
+<div class="absolute top-2 left-2 w-6 h-6 bg-outline/20 rounded-full border border-outline/40"></div>
+<div class="aspect-square overflow-hidden bg-surface-container-low">
+<img alt="Clockwork owl illustration" class="w-full h-full object-cover" data-alt="Intricate steampunk mechanical owl with brass gears and glowing amber lens eyes, perched on a vintage typewriter, detailed concept art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwXAzIVlgryTGQevmGRpzrPzooabh6foPfqqHSUz_56WK_AqfKuzOEP8oGUHULXcl5YggZDsqztNBO4A9gOqVSW9mXM3fO79M18rZtjGgNdHX4HBI8HnuB_2zaMe_ch9L6Tu_GJPmCiFv14F_r_IX2kPU98JC3T2Ykiq_JMsmI8TPwz2TpEUCKXbdc-LQSRP9tUHP8LBTrroF2uyRvev3hYfBq92Yq1d0Hi1a8H6AE_6hxW3b0mPah-0DKg0VTUTlBeOsoL6NEbko"/>
+</div>
+<div class="mt-4">
+<span class="inline-block bg-tertiary-container/20 px-3 py-1 mb-2">
+<p class="font-hand text-2xl text-tertiary-container">My Owl Post Friend</p>
+</span>
+</div>
+</div>
+<!-- Annotation -->
+<div class="absolute -right-8 -bottom-10 font-hand text-xl text-secondary max-w-[150px] -rotate-12">
+                    He delivers letters to the moon! 🌙
+                </div>
+</div>
+<!-- Floating Castle Card -->
+<div class="md:col-start-3 md:col-end-10 relative mt-12 md:-mt-16">
+<div class="bg-white p-6 sketch-border -rotate-1 shadow-2xl hover:rotate-0 transition-transform duration-500">
+<!-- Taped Corners -->
+<div class="absolute -top-2 -left-2 w-12 h-6 bg-secondary-fixed/40 -rotate-45 z-10"></div>
+<div class="absolute -bottom-2 -right-2 w-12 h-6 bg-secondary-fixed/40 -rotate-45 z-10"></div>
+<div class="aspect-[16/9] overflow-hidden bg-surface-container-low">
+<img alt="Floating castle in the clouds" class="w-full h-full object-cover" data-alt="Magnificent stone castle floating on a lush green island in a sea of soft white clouds at sunrise, ethereal lighting, Studio Ghibli inspired" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA02WB0Mr1JVXla1rDRQf16vcMOekzwPXKNbApsRyFThiTP_Eaw91wFvjk5_oo7rDz4XENdRnpNp189bpzS0P-Jjupfwl2Yb3wMx042irZ3j6MFHkJnRw0ogcZRCgPV3Q9EaEZGKPVAOLVzqI1ikQJTJRpU59bYpg0a2atGsmAnlPjQj1LjTD-P5T6b_Bj1LUnKZpbLdeydMZJNiOD_8jZb_S6fyiab5L-E_Qq0Y9UDNz1hvWnMXAjsPiYhbKfbuTn_2P0NvUcu9KM"/>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<p class="font-hand text-4xl text-primary">The Kingdom of Nowhere</p>
+<p class="font-body text-xs uppercase tracking-widest text-on-surface-variant">Page 42</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-40 flex flex-col items-center">
+<div class="relative group cursor-pointer">
+<!-- Decorative Ink Blot -->
+<div class="absolute inset-0 bg-tertiary-container/10 blur-3xl scale-150 rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
+<button class="relative bg-primary text-on-primary px-10 py-6 flex items-center gap-4 group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">draw</span>
+<span class="font-headline text-2xl font-bold uppercase tracking-tighter">Draw More</span>
+</button>
+<!-- Quill Decoration -->
+<div class="absolute -right-12 -top-12 rotate-45 text-secondary opacity-30 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-6xl">ink_pen</span>
+</div>
+</div>
+<p class="mt-6 font-hand text-2xl text-on-surface-variant italic">Add another memory to the book...</p>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-20 border-t border-[#c2c9bb]/20">
+<div class="flex flex-col items-center gap-4 max-w-4xl mx-auto text-center">
+<div class="flex gap-6 mb-4">
+<a class="font-['Newsreader'] italic text-sm text-[#154212]/70 hover:text-[#7b5800] transition-colors" href="#">Owl Post</a>
+<a class="font-['Newsreader'] italic text-sm text-[#154212]/70 hover:text-[#7b5800] transition-colors" href="#">The Attic</a>
+<a class="font-['Newsreader'] italic text-sm text-[#154212]/70 hover:text-[#7b5800] transition-colors" href="#">Privacy Spells</a>
+</div>
+<div class="font-['Newsreader'] italic text-sm text-[#154212]">© Leo's Notebook</div>
+</div>
+</footer>
+<!-- Floating Navigation for Mobile -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 bg-surface/90 backdrop-blur-lg border border-outline-variant/30 px-6 py-3 rounded-full shadow-2xl flex gap-8 items-center z-50">
+<a class="text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+</a>
+<a class="text-secondary scale-125" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">brush</span>
+</a>
+<a class="text-primary hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined">toys</span>
+</a>
+</div>
+</body></html>
