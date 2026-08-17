@@ -5,6 +5,22 @@
       "destination": "/site/assets/$1"
     },
     {
+      "source": "/my-story",
+      "destination": "/site/index.html"
+    },
+    {
+      "source": "/sketches",
+      "destination": "/site/sketches.html"
+    },
+    {
+      "source": "/treasures",
+      "destination": "/site/treasures.html"
+    },
+    {
+      "source": "/dreams",
+      "destination": "/site/dreams.html"
+    },
+    {
       "source": "/(.*\\.html)",
       "destination": "/site/$1"
     },
